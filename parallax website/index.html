@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Parallax</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+  </style>
+   <script src="https://unpkg.com/@heroicons/react/24/solid/cup.svg"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans text-white">
+ 
+<!-- <body class="bg-gradient-to-r from-[#3b2418] to-[#6b4423] text-white"> -->
+
+  <!-- Navbar -->
+  <nav class="w-full px-6 py-4 flex justify-between items-center bg-gradient-to-r from-[#3b2418] to-[#6b4423]">
+    <!-- Logo Section -->
+    <div class="flex items-center space-x-2">
+      <span class="material-icons text-[#b07d62]">coffee</span>
+      <h1 class="text-2xl font-bold text-[#f5f5dc]">Brew & Bean</h1>
+    </div>
+
+    <!-- Menu Section -->
+    <ul class="hidden md:flex space-x-8 text-[#f5f5dc] font-medium">
+      <li><a href="#home" class="text-[#a56b45]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#d3bfae]">About</a></li>
+      <li><a href="#menu" class="hover:text-[#d3bfae]">Menu</a></li>
+      <li><a href="#gallery" class="hover:text-[#d3bfae]">Gallery</a></li>
+      <li><a href="#contact" class="hover:text-[#d3bfae]">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
+
+  
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-black bg-opacity-50 relative">
+    <div class="absolute inset-0 parallax" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1470&q=80');"></div>
+    <div class="z-10 text-center px-4">
+      <h1 class="text-5xl md:text-7xl font-bold">Brew & Bean Café</h1>
+      <p class="mt-4 text-xl">Where every cup tells a story of passion, quality, and extraordinary flavor</p>
+    </div>
+  </section>
+
+  <!-- Parallax Coffee Section 1 -->
+  <!-- <section class="h-screen parallax" style="background-image: url('https://images.unsplash.com/photo-1523942839745-7848d07db3c4?auto=format&fit=crop&w=1470&q=80');">
+    <div class="h-full w-full bg-black bg-opacity-60 flex justify-center items-center">
+      <h2 class="text-4xl md:text-6xl font-bold">Espresso Bliss</h2>
+    </div>
+  </section> -->
+
+  
+  <!-- Section Title -->
+  <section id="about" class="text-center py-16 px-4">
+    <h2 class="text-4xl font-extrabold text-[#4c2e14] mb-4">Our Coffee Story</h2>
+    <p class="text-lg max-w-3xl mx-auto text-[#6b4226]">
+      From bean to cup, we're passionate about delivering the perfect coffee experience that<br>
+      brings people together and creates lasting memories.
+    </p>
+
+    <!-- Card Grid -->
+    <div  class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Card 1 -->
+      <div class="bg-stone-300  p-8 rounded-xl shadow-lg text-center">
+        <div class="text-4xl text-[#5c3b1c] mb-4">🌱</div>
+        <h3 class="text-xl font-bold text-[#4c2e14] mb-2">Farm to Cup</h3>
+        <p class="text-[#5a3e2b]">
+          We source our beans directly from sustainable coffee farms, ensuring fair trade
+          practices and the highest quality beans.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-stone-300  p-8 rounded-xl shadow-lg text-center">
+        <div class="text-4xl text-[#a65a2d] mb-4">🔥</div>
+        <h3 class="text-xl font-bold text-[#4c2e14] mb-2">Artisan Roasting</h3>
+        <p class="text-[#5a3e2b]">
+          Our master roasters carefully craft each batch using traditional techniques and
+          modern precision to unlock unique flavors.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-stone-300  p-8 rounded-xl shadow-lg text-center">
+        <div class="text-4xl text-[#c79b6d] mb-4">❤️</div>
+        <h3 class="text-xl font-bold text-[#4c2e14] mb-2">Community Love</h3>
+        <p class="text-[#5a3e2b]">
+          We believe great coffee brings people together. Our café is a warm, welcoming
+          space for connection and community.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  
+
+  <!-- Parallax Coffee Section 2 -->
+  <section class="h-screen parallax" style="background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1470&q=80');">
+    <div class="h-full w-full bg-black bg-opacity-50 flex justify-center items-center">
+      <h2 class="text-4xl md:text-6xl font-bold">Roasted Perfection</h2>
+    </div>
+  </section>
+
+    <section id="menu" class="bg-gradient-to-r from-[#3b2418] to-[#6b4423] py-16 px-6 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Our Coffee Menu</h2>
+    <p class="text-lg max-w-2xl mx-auto text-[#f2e2cc]">
+      Discover our carefully curated selection of premium coffee drinks, each crafted with
+      passion and precision.
+    </p>
+
+    <!-- Cards -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      
+      <!-- Espresso -->
+      <div class="bg-[#6d4b35] bg-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <div class="text-5xl mb-4">☕</div>
+        <h3 class="text-xl font-bold mb-2 text-[#fff8dc]">Espresso</h3>
+        <p class="text-[#e7d8c2] mb-4">
+          Rich, bold, and perfectly extracted single or double shot espresso.
+        </p>
+        <p class="font-semibold text-white">$2.50 - $3.50</p>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="bg-[#6d4b35] bg-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <div class="text-5xl mb-4">☕</div>
+        <h3 class="text-xl font-bold mb-2 text-[#fff8dc]">Cappuccino</h3>
+        <p class="text-[#e7d8c2] mb-4">
+          Perfect balance of espresso, steamed milk, and velvety foam.
+        </p>
+        <p class="font-semibold text-white">$4.25</p>
+      </div>
+
+      <!-- Latte -->
+      <div class="bg-[#6d4b35] bg-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <div class="text-5xl mb-4">🍶</div>
+        <h3 class="text-xl font-bold mb-2 text-[#fff8dc]">Latte</h3>
+        <p class="text-[#e7d8c2] mb-4">
+          Smooth espresso with steamed milk and delicate microfoam art.
+        </p>
+        <p class="font-semibold text-white">$4.75</p>
+      </div>
+
+      <!-- Cold Brew -->
+      <div class="bg-[#6d4b35] bg-opacity-50 rounded-xl p-6 shadow-lg hover:shadow-2xl transition">
+        <div class="text-5xl mb-4">❄️</div>
+        <h3 class="text-xl font-bold mb-2 text-[#fff8dc]">Cold Brew</h3>
+        <p class="text-[#e7d8c2] mb-4">
+          Smooth, refreshing cold-brewed coffee served over ice.
+        </p>
+        <p class="font-semibold text-white">$3.95</p>
+      </div>
+
+    </div>
+  </section>
+
+    <section id="gallery" class="h-screen parallax" style="background-image: url('./f5d93c1e34524d61e6d088e3f9ed169e.jpg');">
+    <div class="h-full w-full bg-black bg-opacity-50 flex justify-center items-center">
+      <h2 class="text-4xl md:text-6xl font-bold">Café Gallery</h2>
+    </div>
+  </section>
+   <section class="bg-[#e5c9a2]  bg-[url('https://www.transparenttextures.com/patterns/checkered-light-emboss.png')] py-16 px-6 text-center">
+    <h2 class="text-4xl font-extrabold mb-4 text-amber-700 ">Café Gallery</h2>
+    <p class="text-lg max-w-2xl mx-auto mb-12 text-amber-700">
+      Step inside our cozy café and discover the warm atmosphere where great coffee and community come together.
+    </p>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      
+    
+      <div class="bg-[#fefbe9] border-4 border-[#7b4a2f] rounded-xl p-6 text-center">
+        <div class="text-4xl mb-4"><img class="mx-auto mb-4 h-[310px] w-[395px] rounded-md w-full max-w-xs object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjNcnF5LGSzffGFwTBTd_oilJ_ajz5kfb4YQ&s" alt=""></div>
+        <h3 class="text-xl font-bold mb-2">Cozy Interior</h3>
+        <p class="text-[#5e3e2c] mb-4">
+          Warm wooden furnishings and soft lighting create the perfect ambiance for relaxation.
+        </p>
+        <span class="inline-block mt-5 px-4 py-1 text-sm bg-[#7b4a2f] text-white rounded-full">Seating for 40</span>
+      </div>
+
+     
+      <div class="bg-[#fefbe9] border-4 border-[#7b4a2f] rounded-xl p-6 text-center">
+        <div class="text-4xl mb-4"><img class="mx-auto mb-4 h-[310px] w-[395px] rounded-md w-full max-w-xs object-cover" src="https://craftcoffeespot.com/wp-content/uploads/2022/08/054-steam-wand-1024x683.jpg" alt=""></div>
+        <h3 class="text-xl font-bold mb-2">Espresso Bar</h3>
+        <p class="text-[#5e3e2c] mb-4">
+          State-of-the-art espresso machines operated by skilled baristas crafting perfect drinks.
+        </p>
+        <span class="inline-block px-4 py-1 text-sm bg-[#7b4a2f] text-white rounded-full">Professional Grade</span>
+      </div>
+
+      
+      <div class="bg-white border-4 border-[#7b4a2f] rounded-xl p-6 text-center">
+        <div class="text-4xl mb-4"><img  class="mx-auto mb-4 rounded-md w-full max-w-xs object-cover " src="https://files.yappe.in/place/small/borma-4602862.webp" alt=""></div>
+        <h3 class="text-xl font-bold mb-2">Garden Patio</h3>
+        <p class="text-[#5e3e2c] mb-4">
+          Beautiful outdoor seating surrounded by plants and natural light for a refreshing experience.
+        </p>
+        <span class="inline-block px-4 py-1 text-sm bg-[#7b4a2f] text-white  rounded-full">Outdoor Dining</span>
+      </div>
+
+    </div>
+  </section>
+    <section id="contact" class="bg-[#3e2515] text-center py-16 px-6">
+    <h2 class="text-4xl font-extrabold text-[#fff9e6] mb-4">Visit Our Café</h2>
+    <p class="text-lg text-[#e1c9a2] max-w-2xl mx-auto mb-12">
+      Come experience the perfect blend of exceptional coffee and warm hospitality in our cozy café.
+    </p>
+
+    <!-- Info Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-[#f2e9db]">
+
+      <!-- Location -->
+      <div class="text-center">
+        <div class="text-3xl mb-2">📍</div>
+        <h3 class="text-xl font-bold mb-2">Location</h3>
+        <p>123 Coffee Street<br>Downtown District<br>San Francisco, CA 94102</p>
+      </div>
+
+      <!-- Hours -->
+      <div class="text-center">
+        <div class="text-3xl mb-2">🕒</div>
+        <h3 class="text-xl font-bold mb-2">Hours</h3>
+        <p>
+          Mon-Fri: 6:00 AM - 8:00 PM<br>
+          Sat-Sun: 7:00 AM - 9:00 PM<br>
+          Holidays: 8:00 AM - 6:00 PM
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="text-center">
+        <div class="text-3xl mb-2">📞</div>
+        <h3 class="text-xl font-bold mb-2">Contact</h3>
+        <p>
+          Phone: (415) 555-BREW<br>
+          Email: hello@brewandbean.com<br>
+          Instagram: @brewandbeancafe
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-[#2b1404] text-[#f2e9db] font-serif">
+  <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+
+    <!-- Brand and Tagline -->
+    <div class="mb-6">
+      <h2 class="text-2xl font-extrabold flex items-center justify-center gap-2">
+        <span>☕</span> Brew & Bean
+      </h2>
+      <p class="text-[#d9b382] mt-2">Crafting exceptional coffee experiences since 2020.</p>
+    </div>
+
+
+    <!-- Grid Sections -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto text-[#e4c197] text-center">
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-bold text-lg mb-2 text-[#f2e9db]">Quick Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-[#d9b382]">Menu</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Our Story</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Gallery</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-bold text-lg mb-2 text-[#f2e9db]">Services</h3>
+        <ul class="space-y-1">
+          <li>Dine-in Experience</li>
+          <li>Takeaway Orders</li>
+          <li>Coffee Catering</li>
+          <li>Private Events</li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h3 class="font-bold text-lg mb-2 text-[#f2e9db]">Connect</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-[#d9b382]">Newsletter Signup</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Loyalty Program</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Gift Cards</a></li>
+          <li><a href="#" class="hover:text-[#d9b382]">Careers</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-[#5b341d] mt-10 pt-6 text-sm text-[#d9b382]">
+      <p>
+        &copy; 2025 Brew & Bean Café. All rights reserved.
+        <span class="mx-2">|</span>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <span class="mx-2">|</span>
+        <a href="#" class="hover:underline">Terms of Service</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
